@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Certification from "./Certification";
 import Awards from "./Awards";
 import Social from "./Social";
+import Portfolio from "./Portfolio";
 
 function Layout() {
   return (
@@ -12,6 +13,7 @@ function Layout() {
       <Awards></Awards>
       <hr className="border-b border-dashed border-gray-600" />
       <Social></Social>
+      <Portfolio></Portfolio>
     </div>
   );
 }
