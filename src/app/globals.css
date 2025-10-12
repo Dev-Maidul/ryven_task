@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.linkedIn{
+  /* Button */
+width: 107px;
+height: 37px;
+border-radius: 53px;
+background: rgba(210, 210, 213, 1);
+}
+.bgmain {
+  background: linear-gradient(
+    to bottom right,
+    rgba(65, 62, 105, 0.25),
+    rgba(32, 30, 56, 1),
+    rgba(70, 66, 120, 1),
+    rgba(16, 15, 35, 1)
+  );
+}
