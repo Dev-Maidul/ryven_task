@@ -18,7 +18,7 @@ function Certification() {
   ]
 
   return (
-    <div className='w-[1062px] mx-auto border border-dashed border-gray-600 p-8'>
+    <div className='w-[1062px] mx-auto border-l border-r border-dashed border-gray-600 p-8'>
         <div className="w-[720px] mx-auto px-4  text-center ">
       {/* Introduction Text */}
       <p className="text-white text-[20px] leading-relaxed mb-8">
