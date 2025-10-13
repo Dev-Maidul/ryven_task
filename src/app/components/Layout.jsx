@@ -6,6 +6,8 @@ import Social from "./Social";
 import Portfolio from "./Portfolio";
 import Products from "./Products";
 import Framework from "./Framework";
+import OpenSource from "./OpenSource";
+import Footer from "./Footer";
 
 function Layout() {
   return (
@@ -19,6 +21,8 @@ function Layout() {
       <hr className="border-b border-dashed border-gray-600" />
       <Products></Products>
       <Framework></Framework>
+      <OpenSource></OpenSource>
+      <Footer></Footer>
     </div>
   );
 }

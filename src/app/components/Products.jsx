@@ -98,8 +98,8 @@ const Products = () => {
         </div>
       </div>
       {/* Load More Button */}
-      <div className="text-left mt-6 ">
-        <button className="px-4 py-2 bg-gray-700 rounded  hover:bg-[#ff512f] hover:text-white transition-colors duration-300 cursor-pointer">
+      <div className="text-center mt-6 ">
+        <button className="px-4 py-2 bg-gray-700 rounded  hover:bg-[#ff512f] hover:text-white transition-colors duration-300 cursor-pointer text-center">
           View More
         </button>
       </div>

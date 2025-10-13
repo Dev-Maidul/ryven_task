@@ -19,7 +19,7 @@ function Certification() {
 
   return (
     <div className='w-[1062px] mx-auto border-l border-r border-dashed border-gray-600 p-8'>
-        <div className="w-[720px] mx-auto px-4  text-left ">
+        <div className="w-[720px] mx-auto px-4  text-center ">
       {/* Introduction Text */}
       <p className="text-white text-[20px] leading-relaxed mb-8">
         Frontend Developer with several years of experience as a <br /> Freelancer. 
@@ -29,7 +29,7 @@ function Certification() {
       
       {/* Certifications Section */}
       <div className="rounded-lg p-6">
-        <h3 className="text-white font-bold text-[20px] uppercase tracking-wider mb-8">
+        <h3 className="text-white font-bold text-[20px] uppercase tracking-wider mb-8 text-center">
           Certifications
         </h3>
         

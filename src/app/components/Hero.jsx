@@ -4,14 +4,14 @@ import bannerImage from "../../../public/thumbnail.png";
 function Hero() {
   return (
     <div
-      className="relative h-[720px] bg-cover bg-center overflow-hidden mb-4"
+      className="relative h-[720px] bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url(${bannerImage.src})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#121120]/70"></div>
+      <div className="absolute inset-0 bg-[#121120]/70 "></div>
 
       <div className="relative z-10 flex items-center justify-center text-white w-[840px] mx-auto h-screen">
-  <div className="flex flex-col items-center justify-center text-left">
+  <div className="flex flex-col items-center justify-center text-center">
     <h1 className="text-[96px] font-bold tracking-[-0.02em] leading-[1.05]">
   CREATIVE DEVELOPER SINCE <br />
   <span className="text-[#ff512f]">2020</span>

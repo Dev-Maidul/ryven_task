@@ -4,8 +4,8 @@ import React from "react";
 import logo from "../../../public/ryven_co_logo 1.png";
 function Navbar() {
   return (
-    <div className="h-[100px]  flex">
-      <div className="menu bg-white flex items-center justify-between w-[641px] h-[54px] mx-auto rounded-[99px] text-black p-4">
+    <div className="h-[100px] flex bg-gradient-to-b from-[rgba(65,62,105,0.25)] to-[rgba(16,15,35,1)]">
+      <div className="menu bg-white flex items-center justify-between w-[641px] h-[54px] mx-auto rounded-[99px] text-black p-4 mt-4">
         <div className="logo">
           <Image src={logo} alt="Logo"></Image>
         </div>
