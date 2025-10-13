@@ -56,7 +56,7 @@ h-[413px]">
           </button>
 
           {/* GitHub */}
-          <button className="flex items-center justify-center gap-2 px-4 py-4 text-white rounded border-2 border-white bg-[#1e1d2b] hover:bg-gray-800 hover:border-gray-800 transition cursor-pointer h-full">
+          <button className="flex items-center justify-center gap-2 px-4 py-4 text-white rounded border-2 border-white bg-[#1e1d2b] hover:  hover:border-gray-800 transition cursor-pointer h-full">
             <FaGithub /> GitHub
           </button>
 

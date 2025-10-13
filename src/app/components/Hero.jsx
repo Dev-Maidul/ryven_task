@@ -11,7 +11,7 @@ function Hero() {
       <div className="absolute inset-0 bg-[#121120]/70"></div>
 
       <div className="relative z-10 flex items-center justify-center text-white w-[840px] mx-auto h-screen">
-  <div className="flex flex-col items-center justify-center text-center">
+  <div className="flex flex-col items-center justify-center text-left">
     <h1 className="text-[96px] font-bold tracking-[-0.02em] leading-[1.05]">
   CREATIVE DEVELOPER SINCE <br />
   <span className="text-[#ff512f]">2020</span>

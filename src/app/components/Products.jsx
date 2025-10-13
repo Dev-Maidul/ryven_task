@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div className="text-white p-4 w-[1062px] mx-auto mt-2  border-l border-r border-dashed border-gray-600 ">
       {/* Header */}
-      <div className="text-center mb-6">
+      <div className="text-left mb-6">
         <h1 className="text-[32px] font-bold">Projects and Products</h1>
         <h2 className="text-[24px] text-[#ADABC7]">Lista de productos</h2>
 
@@ -98,7 +98,7 @@ const Products = () => {
         </div>
       </div>
       {/* Load More Button */}
-      <div className="text-center mt-6 ">
+      <div className="text-left mt-6 ">
         <button className="px-4 py-2 bg-gray-700 rounded  hover:bg-[#ff512f] hover:text-white transition-colors duration-300 cursor-pointer">
           View More
         </button>

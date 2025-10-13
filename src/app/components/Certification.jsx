@@ -19,7 +19,7 @@ function Certification() {
 
   return (
     <div className='w-[1062px] mx-auto border-l border-r border-dashed border-gray-600 p-8'>
-        <div className="w-[720px] mx-auto px-4  text-center ">
+        <div className="w-[720px] mx-auto px-4  text-left ">
       {/* Introduction Text */}
       <p className="text-white text-[20px] leading-relaxed mb-8">
         Frontend Developer with several years of experience as a <br /> Freelancer. 
@@ -50,7 +50,7 @@ function Certification() {
               
               {/* Tooltip */}
               <div className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                <div className="bg-gray-800 text-white text-xs py-1 px-2 rounded whitespace-nowrap">
+                <div className="  text-white text-xs py-1 px-2 rounded whitespace-nowrap">
                   {cert.name}
                 </div>
               </div>

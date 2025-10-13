@@ -5,6 +5,7 @@ import Awards from "./Awards";
 import Social from "./Social";
 import Portfolio from "./Portfolio";
 import Products from "./Products";
+import Framework from "./Framework";
 
 function Layout() {
   return (
@@ -17,6 +18,7 @@ function Layout() {
       <Portfolio></Portfolio>
       <hr className="border-b border-dashed border-gray-600" />
       <Products></Products>
+      <Framework></Framework>
     </div>
   );
 }
