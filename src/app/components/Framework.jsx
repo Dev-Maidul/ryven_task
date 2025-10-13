@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-
 import {
   FaNodeJs,
   FaReact,
@@ -12,30 +10,30 @@ import {
 
 const Framework = () => {
   return (
-    <div className="text-white p-4 w-[1062px] mx-auto mt-2  border-l border-r border-dashed border-gray-600 ">
+    <div className="text-white p-4 sm:p-6 max-w-[1062px] mx-auto mt-4 border-l border-r border-dashed border-gray-600">
       <div>
-        <h1 className="text-[42px] font-bold text-center mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-[42px] font-bold text-center mb-4">
           Frameworks & Tech
         </h1>
-        <p className=" text-gray-500 mb-8 text-center text-[20px]">
+        <p className="text-gray-500 mb-8 text-center text-base sm:text-lg md:text-[20px]">
           These are the tools and frameworks with which I feel more comfortable
-          without limiting <br /> myself to them because I have worked with
-          Angular, MySql, Laravel, C++ and many more.... <br /> My main stack
-          is:
+          without limiting <br />
+          myself to them because I have worked with Angular, MySql, Laravel, C++ and many more....
+          <br /> My main stack is:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div className="border border-gray-500 p-6 rounded-lg text-left">
             <div className="flex justify-start mb-2">
-              <FaNodeJs className="text-4xl text-white " />
+              <FaNodeJs className="text-4xl text-white" />
             </div>
-
             <h2 className="text-xl mb-2 font-bold">Next.js 13</h2>
             <p className="text-white">
               App dir, Routing, Layouts, Loading UI and API routes.
             </p>
           </div>
 
-          <div className="border border-gray-500  p-6 rounded-lg text-left">
+          <div className="border border-gray-500 p-6 rounded-lg text-left">
             <div className="flex justify-start mb-2">
               <FaReact className="text-4xl text-white" />
             </div>
@@ -45,7 +43,7 @@ const Framework = () => {
             </p>
           </div>
 
-          <div className="border border-gray-500  p-4 rounded-lg text-left">
+          <div className="border border-gray-500 p-6 rounded-lg text-left">
             <div className="flex justify-start mb-2">
               <FaDatabase className="text-4xl text-white" />
             </div>
@@ -53,7 +51,7 @@ const Framework = () => {
             <p className="text-white">ORM using Prisma and PostgreSQL.</p>
           </div>
 
-          <div className="border border-gray-500  p-4 rounded-lg text-left">
+          <div className="border border-gray-500 p-6 rounded-lg text-left">
             <div className="flex justify-start mb-2">
               <FaCode className="text-4xl text-white" />
             </div>
@@ -63,7 +61,7 @@ const Framework = () => {
             </p>
           </div>
 
-          <div className="border border-gray-500  p-4 rounded-lg text-left">
+          <div className="border border-gray-500 p-6 rounded-lg text-left">
             <div className="flex justify-start mb-2">
               <FaShieldAlt className="text-4xl text-white" />
             </div>
@@ -73,7 +71,7 @@ const Framework = () => {
             </p>
           </div>
 
-          <div className=" border border-gray-500  p-4 rounded-lg text-left">
+          <div className="border border-gray-500 p-6 rounded-lg text-left">
             <div className="flex justify-start mb-2">
               <FaStripe className="text-4xl text-white" />
             </div>
@@ -84,8 +82,6 @@ const Framework = () => {
           </div>
         </div>
       </div>
-      {/* tech bottom */}
-      
     </div>
   );
 };

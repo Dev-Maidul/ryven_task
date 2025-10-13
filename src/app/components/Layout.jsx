@@ -17,7 +17,7 @@ function Layout() {
       <Awards></Awards>
       <hr className="border-b border-dashed border-gray-600" />
       <Social></Social>
-      <Portfolio></Portfolio>
+      {/* <Portfolio></Portfolio> */}
       <hr className="border-b border-dashed border-gray-600" />
       <Products></Products>
       <Framework></Framework>
