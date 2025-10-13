@@ -47,25 +47,38 @@ const TabContent = ({ activeTab }) => {
           </div>
           <div className="md:col-span-8 border border-gray-600 rounded-xl p-6 sm:p-8">
             <div className="flex flex-col gap-2 mb-6 text-center md:text-left">
-              <p className="text-[20px] sm:text-[22px] font-medium text-gray-300">LINKS</p>
-              <span className="text-[24px] sm:text-[28px] font-bold text-white">Social Media</span>
+              <p className="text-[20px] sm:text-[22px] font-medium text-gray-300">
+                LINKS
+              </p>
+              <span className="text-[24px] sm:text-[28px] font-bold text-white">
+                Social Media
+              </span>
             </div>
+
+            {/* Buttons grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
-                { icon: <FaFacebook />, label: "Facebook", hover: "blue-600" },
-                { icon: <FaLinkedin />, label: "LinkedIn", hover: "blue-700" },
-                { icon: <FaFigma />, label: "Figma", hover: "purple-500" },
-                { icon: <FaDribbble />, label: "Dribbble", hover: "pink-500" },
-                { icon: <FaTwitter />, label: "Twitter", hover: "sky-400" },
-                { icon: <FaGithub />, label: "GitHub", hover: "gray-800" },
-                { icon: <FaInstagram />, label: "Instagram", hover: "pink-600" },
+                { icon: <FaFacebook />, label: "Facebook", color: "#1877F2" },
+                { icon: <FaLinkedin />, label: "LinkedIn", color: "#0077B5" },
+                { icon: <FaFigma />, label: "Figma", color: "#A259FF" },
+                { icon: <FaDribbble />, label: "Dribbble", color: "#EA4C89" },
+                { icon: <FaTwitter />, label: "Twitter", color: "#1DA1F2" },
+                { icon: <FaGithub />, label: "GitHub", color: "#333333" },
+                { icon: <FaInstagram />, label: "Instagram", color: "#E4405F" },
               ].map((btn) => (
-                <button
+                <motion.button
                   key={btn.label}
-                  className={`flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-base text-white rounded border-2 border-white bg-[#1e1d2b] hover:bg-${btn.hover} hover:border-${btn.hover} transition-all duration-300`}
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: btn.color,
+                    borderColor: btn.color,
+                    transition: { duration: 0.3, ease: "easeInOut" },
+                  }}
+                  whileTap={{ scale: 0.97 }}
+                  className="flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-base text-white rounded border-2 border-white bg-[#1e1d2b] transition-all duration-300 cursor-pointer"
                 >
                   {btn.icon} {btn.label}
-                </button>
+                </motion.button>
               ))}
             </div>
           </div>
@@ -85,8 +98,12 @@ const TabContent = ({ activeTab }) => {
             className="text-white p-6 rounded-lg flex flex-col justify-end h-[250px] sm:h-[300px] md:h-[350px] bg-cover bg-center"
             style={{ backgroundImage: `url(${backgroundImage.src})` }}
           >
-            <h2 className="text-lg sm:text-xl font-bold mb-1 text-gray-400">ABOUT ME</h2>
-            <p className="text-2xl sm:text-4xl font-bold text-white leading-tight">My Story</p>
+            <h2 className="text-lg sm:text-xl font-bold mb-1 text-gray-400">
+              ABOUT ME
+            </h2>
+            <p className="text-2xl sm:text-4xl font-bold text-white leading-tight">
+              My Story
+            </p>
           </div>
         </motion.div>
       )}
@@ -105,7 +122,9 @@ const TabContent = ({ activeTab }) => {
             className="text-white p-6 rounded-lg flex flex-col justify-end h-[250px] sm:h-[300px] md:h-[350px] bg-cover bg-center"
             style={{ backgroundImage: `url(${portfolio.src})` }}
           >
-            <h2 className="text-lg sm:text-xl font-bold mb-1 text-gray-400">FIGMA</h2>
+            <h2 className="text-lg sm:text-xl font-bold mb-1 text-gray-400">
+              FIGMA
+            </h2>
             <p className="text-2xl sm:text-4xl font-bold text-white leading-tight">
               Download <br /> Portfolio
             </p>
@@ -124,10 +143,12 @@ const TabContent = ({ activeTab }) => {
             </div>
             <div className="mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-end bg-[#000000B0] w-full p-4 rounded-lg gap-3 sm:gap-0">
               <div>
-                <h2 className="text-lg sm:text-2xl font-bold mb-1">Memory ClickSt...</h2>
+                <h2 className="text-lg sm:text-2xl font-bold mb-1">
+                  Memory ClickSt...
+                </h2>
                 <p className="text-sm sm:text-lg">PRODUCT</p>
               </div>
-              <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-[#ff512f] transition duration-300">
+              <button className="bg-gray-700 text-white px-4 py-2 rounded cursor-pointer hover:bg-[#ff512f] transition duration-300">
                 Visit
               </button>
             </div>
@@ -149,7 +170,9 @@ export default function SocialPortfolioTabs() {
           <button
             key={tab.id}
             className={`relative text-white font-semibold text-lg sm:text-xl pb-2 ${
-              activeTab === tab.id ? "text-[#ff512f] cursor-pointer" : "text-gray-400 cursor-pointer"
+              activeTab === tab.id
+                ? "text-[#ff512f] cursor-pointer"
+                : "text-gray-400 cursor-pointer"
             }`}
             onClick={() => setActiveTab(tab.id)}
           >

@@ -104,18 +104,32 @@ const Products = () => {
 
       {/* Load More Button */}
       <div className="text-center mt-6">
-        <motion.button
-          className="px-6 py-2 bg-gray-700 rounded text-white cursor-pointer transition-all duration-300"
-          whileHover={{
-            scale: 1.05,
-            filter: "brightness(1.2)",
-            boxShadow: "0px 4px 15px rgba(255, 81, 47, 0.4)",
-          }}
-          transition={{ duration: 0.3 }}
-        >
-          Ver mas
-        </motion.button>
-      </div>
+  <motion.button
+    className="px-6 py-3 bg-gray-700 rounded-lg text-white cursor-pointer transition-all duration-300 touch-manipulation select-none min-h-[44px] min-w-[44px]"
+    whileHover={{
+      scale: 1.05,
+      filter: "brightness(1.2)",
+      boxShadow: "0px 4px 15px rgba(255, 81, 47, 0.4)",
+    }}
+    whileTap={{
+      scale: 0.95,
+      filter: "brightness(0.9)",
+      boxShadow: "0px 2px 8px rgba(255, 81, 47, 0.3)",
+    }}
+    transition={{ 
+      type: "spring",
+      stiffness: 400,
+      damping: 17
+    }}
+    onTapStart={(e) => e.preventDefault()}
+    style={{ 
+      WebkitTapHighlightColor: 'transparent',
+      WebkitTouchCallout: 'none'
+    }}
+  >
+    Ver mas
+  </motion.button>
+</div>
     </div>
   );
 };

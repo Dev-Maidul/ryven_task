@@ -9,12 +9,12 @@ function Navbar() {
 
   return (
     <header className="h-[100px] flex items-center bg-gradient-to-b from-[rgba(65,62,105,0.25)] to-[rgba(16,15,35,1)] relative">
-      {/* Container: use full width but constrain with max-w so large screens look same */}
+      {/* Container */}
       <div className="w-full max-w-[641px] mx-auto px-4">
         {/* Menu pill */}
         <div className="menu bg-white flex items-center justify-between w-full h-[54px] rounded-[99px] text-black p-4 mt-4 relative">
           {/* logo */}
-          <div className="logo flex-shrink-0">
+          <Link href="/"><div className="logo flex-shrink-0">
             <Image
               src={logo}
               alt="Logo"
@@ -22,24 +22,26 @@ function Navbar() {
               height={40}
               className="object-contain w-[100px] h-[32px] sm:w-[120px] sm:h-[40px]"
             />
-          </div>
+          </div></Link>
 
-          {/* Desktop links (hidden on small screens) */}
+          {/* Desktop links */}
           <nav className="menuItem hidden md:flex items-center gap-4">
-            <Link href={"/services"} className="whitespace-nowrap">
-              Services
-            </Link>
-            <Link href={"/services"} className="whitespace-nowrap">
-              Experiences
-            </Link>
-            <Link href={"/services"} className="whitespace-nowrap">
-              Work
-            </Link>
+            {["Services", "Experiences", "Work"].map((item, idx) => (
+              <Link
+                key={idx}
+                href={"/services"}
+                className="whitespace-nowrap cursor-pointer transition-all duration-300 ease-in-out hover:text-[#ff512f] hover:scale-105"
+              >
+                {item}
+              </Link>
+            ))}
           </nav>
 
           {/* action button */}
           <div className="button hidden md:block">
-            <button className="linkedIn">LinkedIn</button>
+            <button className="linkedIn cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#ff512f] hover:text-[#ff512f] hover:scale-105 px-4 py-1 rounded-full">
+              LinkedIn
+            </button>
           </div>
 
           {/* Mobile hamburger */}
@@ -50,7 +52,6 @@ function Navbar() {
             aria-expanded={isOpen}
             type="button"
           >
-            {/* simple icon (three bars) */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -76,20 +77,22 @@ function Navbar() {
             </svg>
           </button>
 
-          {/* Mobile menu (dropdown) */}
+          {/* Mobile menu */}
           {isOpen && (
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[68px] w-[90%] bg-white rounded-xl p-4 flex flex-col items-center gap-3 md:hidden z-30 shadow-lg">
-              <Link href={"/services"} className="w-full text-center py-2">
-                Services
-              </Link>
-              <Link href={"/services"} className="w-full text-center py-2">
-                Experiences
-              </Link>
-              <Link href={"/services"} className="w-full text-center py-2">
-                Work
-              </Link>
+              {["Services", "Experiences", "Work"].map((item, idx) => (
+                <Link
+                  key={idx}
+                  href={"/services"}
+                  className="w-full text-center py-2 cursor-pointer transition-all duration-300 ease-in-out hover:text-[#ff512f] hover:scale-105"
+                >
+                  {item}
+                </Link>
+              ))}
               <div className="w-full flex justify-center pt-1">
-                <button className="linkedIn">LinkedIn</button>
+                <button className="linkedIn cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#ff512f] hover:text-white hover:scale-105 px-4 py-1 rounded-full">
+                  LinkedIn
+                </button>
               </div>
             </div>
           )}
