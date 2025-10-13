@@ -45,14 +45,18 @@ function Hero() {
   };
 
   return (
-    <motion.section
-      className="relative min-h-screen bg-cover bg-center overflow-hidden flex items-center justify-center px-4 sm:px-6 md:px-10 pt-16 z-1" 
-      style={{ backgroundImage: `url(${bannerImage.src})` }}
-      variants={backgroundVariants}
-      animate="animate"
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-[#121120]/70"></div>
+    <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6 md:px-10 pt-16">
+      
+      {/* Animated Background */}
+      <motion.div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${bannerImage.src})` }}
+        variants={backgroundVariants}
+        animate="animate"
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-[#121120]/70"></div>
+      </motion.div>
 
       {/* Content */}
       <div className="relative z-10 text-white text-center max-w-[840px]">
@@ -95,7 +99,7 @@ function Hero() {
           </p>
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

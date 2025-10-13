@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ryven
 
-## Getting Started
+A modern React application built with Next.js, featuring smooth animations and a beautiful user interface.
+Live Link: https://ryven.vercel.app/
+## 🚀 Tech Stack
 
-First, run the development server:
+- **Framework**: Next.js 15.5.4
+- **UI Library**: React 19.1.0
+- **Animation**: Framer Motion 12.23.24
+- **Icons**: React Icons 5.5.0
+- **Styling**: Tailwind CSS 4
+- **Development**: ESLint, TypeScript
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Dev-Maidul/ryven_task
+cd ryven
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## 🎯 Features
 
-To learn more about Next.js, take a look at the following resources:
+- Modern React with latest features
+- Smooth animations with Framer Motion
+- Responsive design with Tailwind CSS
+- TypeScript for type safety
+- ESLint for code quality
+- Optimized with Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+ryven/
+src ├── app/                 # Next.js app directory
+    ├── components/          # React components
+    ├── public/             # Static assets
+    ├── styles/             # Global styles
+    ├── eslint.config.js    # ESLint configuration
+    └── package.json        # Dependencies and scripts
+```
 
-## Deploy on Vercel
+## 🔧 Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project uses:
+- **Next.js 15** with React 19 for the latest features
+- **Tailwind CSS 4** for modern styling
+- **Framer Motion** for smooth animations
+- **TypeScript** for type safety
+- **ESLint** with Next.js configuration for code quality
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Contact
+
+**Md Maidul Islam**
+
+- 📱 Phone: +86 131-6175-0176
+- 💬 WhatsApp: +88 01792887606
+- 💻 GitHub: [Dev-Maidul](https://github.com/Dev-Maidul)
+- 💼 LinkedIn: [maidul-devs](https://www.linkedin.com/in/maidul-devs)
+- 🌐 Portfolio: [maiduldevs.netlify.app](https://maiduldevs.netlify.app/)
+- 🏆 Codeforces: [Maidul](https://codeforces.com/profile/Maidul)
+- 💡 LeetCode: [Maidul](https://leetcode.com/u/maidulislammanik8991/)
+- 📺 Problem-Solving YouTube Playlist: [Watch Here](https://www.youtube.com/watch?v=5ybL99W9Bfk&list=PL-weXfnSsDpwMiW9SaIhspMfgSkoYIa)
+
