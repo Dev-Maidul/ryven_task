@@ -43,13 +43,13 @@ function Certification() {
                     alt={`${cert.name} certification`}
                     width={40}
                     height={40}
-                    className="object-contain"
+                    className="object-contain cursor-pointer" // Added cursor-pointer
                   />
                 </div>
 
                 {/* Tooltip */}
-                <div className="absolute -bottom-7 sm:-bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <div className="text-white text-xs py-1 px-2 rounded whitespace-nowrap">
+                <div className="absolute -bottom-8 sm:-bottom-9 opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300 pointer-events-none">
+                  <div className="text-white text-xs py-1 px-2 rounded bg-[#ff512f]/80 whitespace-nowrap">
                     {cert.name}
                   </div>
                 </div>
